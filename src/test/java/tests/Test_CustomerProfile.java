@@ -22,7 +22,8 @@ public class Test_CustomerProfile extends Hooks{
 		Assert.assertEquals( lastName,"Smith");
 		
 		//logout as Customer
-		CustomerLogin_Page.action_customerLogout();		
+		CustomerLogin_Page.action_customerLogout();	
+		System.out.println("update");
 	}
 	
 	
