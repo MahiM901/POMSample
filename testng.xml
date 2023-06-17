@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="C:/intelliJ/POMSample">
+        <classes>
+            <class name="tests.Test_CustomerOrder">
+                <methods>
+                    <include name="verify_CustomerId_inOrderPage"/>
+                </methods>
+            </class>
+            <class name="tests.Test_CustomerProfile">
+                <methods>
+                    <include name="verify_CustoemrPrfileName"/>
+                </methods>
+            </class>
+            <class name="tests.Test_LoginPageFunctionality">
+                <methods>
+                    <include name="verify_customerLoginwithValidLoginPassword"/>
+                    <include name="verify_customerIdAtCustomerHomePage"/>
+                </methods>
+            </class>
+            <class name="tests.Test_SloganTextinLandingPage">
+                <methods>
+                    <include name="verifySloganTextinLandingPage"/>
+                    <include name="verifySloganTextinLandingPageLengthIsLessThan200Chars"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
